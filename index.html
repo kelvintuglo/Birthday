@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>Happy Birthday Baby</title>
+    
+  </head>
+
+  <body>
+    <div class="container">
+      <div>
+        <p class="title">Happy<br>Birthday.</p>
+      </div>
+
+      <div>
+        <div>
+          <p class="age-1">2</p>
+        </div>
+
+        <div>
+          <p class="age-2">2</p>
+        </div>
+      </div>  
+      
+      <div class="confetti-wrapper">
+        
+      </div>
+
+      <div class="balloons-container">
+        
+      </div>
+
+      <script>
+        const confettiWrapper = document.querySelector('.confetti-wrapper');
+        // Generate confetti
+        for (let i = 0; i < 50; i++) {
+          const confetti = document.createElement('div');
+          confetti.classList.add('confetti-piece');
+          confetti.style.left = `${Math.random() * 100}%`;
+          confetti.style.setProperty('--fall-duration', `${Math.random() * 3 + 3}s`);
+          confetti.style.setProperty('--confetti-color', getRandomColor());
+          confettiWrapper.appendChild(confetti);
+        }
+        function getRandomColor() {
+          const colors = ['#ff6347', '#ffa500', '#32cd32', '#1e90ff', '#ff69b4'];
+          return colors[Math.floor(Math.random() * colors.length)];
+        }
+      </script>
+    </div>
+  </body>
+</html>
