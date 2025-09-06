@@ -8,7 +8,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;  
-  
 }
 
 body{
@@ -37,7 +36,6 @@ body{
 }
 
 .age-1{
-  /* change font size to rem later */
   font-size: 40rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
@@ -55,7 +53,6 @@ body{
 }
 
 .age-2{
-  /* change font size to rem later */
   font-size: 40rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
@@ -126,16 +123,3 @@ body{
   --confetti-color: #ff69b4;
   --fall-duration: 6s;
 }
-
-@media screen and (min-width: 475px){
-  .title{
-    font-size: 1rem;
-  }
-  .age-1{
-    font-size: 20rem;
-  }
-  .age2{
-    font-size: 20rem;
-  }
-}
-
