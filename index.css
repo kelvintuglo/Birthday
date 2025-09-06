@@ -127,3 +127,15 @@ body{
   --fall-duration: 6s;
 }
 
+@media screen and (min-width: 475px){
+  .title{
+    font-size: 1rem;
+  }
+  .age-1{
+    font-size: 20rem;
+  }
+  .age2{
+    font-size: 20rem;
+  }
+}
+
